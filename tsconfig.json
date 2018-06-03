@@ -4,6 +4,8 @@
 		"module": "commonjs",
 		"target": "es6",
 		"baseUrl": ".",
+		"declaration": true,
+		"outDir": "./build",
 		"paths": {
 		  "*": [
 			"./typings/*",

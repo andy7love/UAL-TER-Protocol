@@ -2,9 +2,11 @@
   "name": "ual-ter-protocol",
   "version": "1.0.0",
   "description": "Unmanned Aircraft Life - Terminal Protocol",
-  "main": "src/index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
-    "start": "npm run lint",
+	"start": "npm run lint && npm run build",
+	"build": "rimraf build && tsc",
     "lint": "tslint -p tslint.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -39,6 +41,7 @@
   },
   "devDependencies": {
     "@types/baconjs": "^0.7.33",
-    "@types/underscore": "^1.8.8"
+    "@types/underscore": "^1.8.8",
+    "rimraf": "^2.6.2"
   }
 }
