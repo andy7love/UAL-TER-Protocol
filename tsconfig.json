@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+	"compilerOptions": {
 		"noImplicitAny": true,
 		"module": "commonjs",
 		"target": "es6",
@@ -7,14 +7,14 @@
 		"declaration": true,
 		"outDir": "./build",
 		"paths": {
-		  "*": [
-			"./typings/*",
-			"./node_modules/@types/*",
-			"./src/*"
-		  ]
+			"*": [
+				"./typings/*",
+				"./node_modules/@types/*",
+				"./src/*"
+			]
 		}
-  },
+	},
 	"exclude": [
-			"node_modules"
+		"node_modules"
 	]
 }

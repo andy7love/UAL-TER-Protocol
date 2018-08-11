@@ -1,47 +1,60 @@
 {
-  "name": "ual-ter-protocol",
-  "version": "1.0.0",
-  "description": "Unmanned Aircraft Life - Terminal Protocol",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
-  "scripts": {
-	"start": "npm run lint && npm run build",
-	"build": "rimraf build && tsc",
-    "lint": "tslint -p tslint.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andy7love/UAL-TER-Protocol.git"
-  },
-  "keywords": [
-    "rc",
-    "drone",
-    "sensors",
-    "robotic",
-    "raspberry",
-    "arduino",
-    "johnny-five",
-    "rtc",
-    "protocol"
-  ],
-  "author": "Andres Amor",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/andy7love/UAL-TER-Protocol/issues"
-  },
-  "homepage": "https://github.com/andy7love/UAL-TER-Protocol#readme",
-  "dependencies": {
-    "baconjs": "^0.7.89",
-    "babylonjs": "^3.2.0",
-    "chalk": "^2.4.1",
-    "tslint": "^5.10.0",
-    "typescript": "^2.8.3",
-    "underscore": "^1.8.3"
-  },
-  "devDependencies": {
-    "@types/baconjs": "^0.7.33",
-    "@types/underscore": "^1.8.8",
-    "rimraf": "^2.6.2"
-  }
+	"name": "ual-ter-protocol",
+	"version": "1.0.0",
+	"description": "Unmanned Aircraft Life - Terminal Protocol",
+	"main": "build/index.js",
+	"types": "build/index.d.ts",
+	"scripts": {
+		"start": "npm run lint && npm run build",
+		"build": "rimraf build && tsc",
+		"lint": "tslint -p tslint.json",
+		"watch": "npm-watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/andy7love/UAL-TER-Protocol.git"
+	},
+	"keywords": [
+		"rc",
+		"drone",
+		"sensors",
+		"robotic",
+		"raspberry",
+		"arduino",
+		"johnny-five",
+		"rtc",
+		"protocol"
+	],
+	"author": "Andres Amor",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/andy7love/UAL-TER-Protocol/issues"
+	},
+	"homepage": "https://github.com/andy7love/UAL-TER-Protocol#readme",
+	"dependencies": {
+		"babylonjs": "^3.2.0",
+		"baconjs": "^0.7.89",
+		"chalk": "^2.4.1",
+		"tslint": "^5.10.0",
+		"typescript": "^2.8.3",
+		"underscore": "^1.8.3"
+	},
+	"devDependencies": {
+		"@types/baconjs": "^0.7.33",
+		"@types/underscore": "^1.8.8",
+		"npm-watch": "^0.3.0",
+		"rimraf": "^2.6.2"
+	},
+	"watch": {
+		"start": {
+			"patterns": [
+				"src"
+			],
+			"extensions": "ts",
+			"quiet": false,
+			"legacyWatch": true,
+			"delay": 2000
+		}
+	}
 }
