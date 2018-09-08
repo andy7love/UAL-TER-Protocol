@@ -36,6 +36,8 @@
 		"babylonjs": "^3.2.0",
 		"baconjs": "^0.7.89",
 		"chalk": "^2.4.1",
+		"kalmanjs": "^1.0.0-beta",
+		"moment": "^2.22.2",
 		"tslint": "^5.10.0",
 		"typescript": "^2.8.3",
 		"underscore": "^1.8.3"
